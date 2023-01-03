@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stream test</title>
+    <script src="static/js/main.js"></script>
+  </head>
+
+  <body>
+    <label for="uuid">user uuid:</label>
+    <div id="uuid" name="uuid"></div>
+    <label for="ssrc">stream ssrc:</label><br />
+    <input type="text" id="ssrc" name="ssrc" min="1" max="4294967296" required><br />
+    <button id="wsb" onclick="window.startWS()"> Start Websocket </button><br />
+    <button id="rtcb" onclick="window.startRTC()" disabled> Start WebRTC </button><br />
+    <h3> Stream </h3>
+    <div id="stream"></div> <br />
+  </body>
+  
+</html>
